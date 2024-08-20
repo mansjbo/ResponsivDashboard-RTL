@@ -1,0 +1,35 @@
+:root {
+    /*========== Colors ==========*/
+    --primary-color: #1eced4;
+    --primary-highlight: #1eced43a;
+    --text-color: #0d1b2a;
+    --background-color: #f6f6f9;
+    --border-color: transparent;
+    --table-header-bg: #00494d;
+    --table-header-text: #eee;
+    --table-row-separator: #bbb;
+    --table-row-hover: #00494d57;
+    --table-button: #f3e3e3;
+    --input-bg: #ffffff;
+    --border-radius: 20%;
+
+  }
+  
+  /*========== Variables Dark theme ==========*/
+.dark-theme {
+    --primary-color: #1eced4;
+    --text-color: #f6f6f9;
+    --background-color: #0d1b2a;
+    --border-color: transparent;
+    --table-header-bg: #eee;
+    --table-header-text: #444;
+    --table-row-separator: #555;
+    --table-row-hover: #ffffff77;
+    --input-bg: #0d1b2a;
+    --border-radius: 20%;
+    
+  }
+
+
+
+

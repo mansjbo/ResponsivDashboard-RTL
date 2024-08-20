@@ -1,0 +1,98 @@
+
+form{
+    width: 100%;
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.input-box, .select-box{
+    padding: .2rem ;
+    min-width: 260px;
+}
+
+.input-box.growing{
+    flex-grow: 1;
+}
+
+.input-box label, .select-box label{
+    display: block;
+    font-size: .8rem;
+    font-weight: 800;
+    margin-bottom: .2rem;
+    margin-right: .5rem;
+}
+
+.input-box input, .select-box select{
+    font-size: 1.125rem;
+    padding: .25rem .5rem;
+    border-radius: 6px;
+    outline: solid 2px #eee;
+    border: none;
+    width: 100%;
+    background: var(--input-bg);
+    color: var(--text-color);
+    text-align: center;
+}
+
+.input-box input:focus, .select-box select:focus {
+    outline-color: rgb(94, 182, 255);
+}
+
+
+
+.form-opp-btn{
+    font-size: 1.4rem;
+    font-weight: 800;
+    padding: .3rem 2rem;
+    margin: 1rem 0;
+    cursor: pointer;
+    border-radius: 6px;
+    border: solid 3px;
+    background: var(--primary-color);
+    color: var(--background-color);
+    border-color: var(--primary-color);
+    transition: all .35s ease-in-out;
+}
+
+.form-opp-btn:hover{
+    background: var(--background-color);
+    color: var(--primary-color);
+}
+
+
+.entries-wrapper{
+    display: flex;
+    justify-content: start;
+    align-items: flex-start;
+    flex-flow: row wrap;
+    gap: 1rem;
+}
+
+.entries-wrapper .form-opp-btn{
+    align-self: start;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Chrome */
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]{
+    -moz-appearance: textfield!important;
+}

@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/all.min.css">
+        <link rel="stylesheet" href="css/themes.css">
+        <link rel="stylesheet" href="css/loader.css">
+        <link rel="stylesheet" href="css/tables.css">
+        <link rel="stylesheet" href="css/forms.css">
+        <link rel="stylesheet" href="css/modals.css">
+        
+        <title>R-Nav</title>
+    </head>
+    <body>
+        <div class="dashboard">
+            <div class="top">
+                <button onclick="toggler(this)" class="toggler"><i class="fa-solid fa-bars"></i></button>
+                <div>
+                    <input type="checkbox" class="checkbox" id="toggleBtn" />
+                    <label class="switch" for="toggleBtn">
+                      <i class="fas fa-moon"></i>
+                      <i class="fas fa-sun"></i>
+                      <div class="ball"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="sidebar">
+                <div class="close-nav-container"><button class="close-nav"><i class="fa-solid fa-circle-xmark fa-xl"></i></button></div>
+                <div class="brand">
+                    <img class="brand-logo" src="logo.png" alt="">
+                    <div class="brand-name">Brand Name</div>
+                </div>
+
+                <ul class="nav-list">
+                    <li class="nav-item active" onclick="navigator(this)"><i class="fa-solid fa-house fa-xl"></i> <span>الرئيسية</span></li>
+                    <li class="nav-item" onclick="navigator(this)"><i class="fa-solid fa-house fa-xl"></i> <span>الرئيسية</span></li>
+                    <li class="nav-item" onclick="navigator(this)"><i class="fa-solid fa-house fa-xl"></i> <span>الرئيسية</span></li>
+                    <li class="nav-item" onclick="navigator(this)"><i class="fa-solid fa-house fa-xl"></i> <span>الرئيسية</span></li>
+                    <li class="nav-item" onclick="navigator(this)"><i class="fa-solid fa-house fa-xl"></i> <span>الرئيسية</span></li>
+                    <li class="nav-item" onclick="navigator(this)"><i class="fa-solid fa-house fa-xl"></i> <span>الرئيسية</span></li>
+                </ul>
+
+                <div class="footer-oppts">
+                    <button class="opptions">Opptions Button</button>
+                </div>
+
+            </div>
+            <main class="main-content">
+               
+
+                <div class="content">
+                    <!-- <div class="table-wrapper">
+                        <div class="table-title">وصف الجدول</div>
+                        <table cellspacing="0">
+                            <thead>
+                                <th>الرقم</th>
+                                <th>الاسم</th>
+                                <th>تاريخ الميلاد</th>
+                                <th>مكان الميلاد</th>
+                                <th>صافي الحساب</th>
+                                <th>إجمالي المدفوعات</th>
+                                <th>تعديل</th>
+                                <th>حذف</th>
+                                <th>جديد</th>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td>1002</td>
+                                    <td>محمد أحمد علي</td>
+                                    <td>1992-04-23</td>
+                                    <td>الجفرة -ليبيا</td>
+                                    <td>12946.340 دينار</td>
+                                    <td>6520 دينار</td>
+                                    <td><button class="edit-row"> تعديل </button></td>
+                                    <td> <button class="delete-row"> حذف </button></td>
+                                    <td><button class="new-row"> جديد </button></td>
+                                </tr>
+
+
+                                    <td>1002</td>
+                                    <td>محمد أحمد علي</td>
+                                    <td>1992-04-23</td>
+                                    <td>الجفرة -ليبيا</td>
+                                    <td>12946.340 دينار</td>
+                                    <td>6520 دينار</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        <div class="table-paggination">
+                            <button> < </button>
+                            <button>1</button>
+                            <button>2</button>
+                            <button>3</button>
+                            <button>4</button>
+                            <button> > </button>
+                        </div>
+                    </div> -->
+                    
+                    <form onsubmit="return false;" id="invoice">
+                        <div class="select-box">
+                            <label for="customers">العميل</label>
+                            <select id="customers" name="customers">
+                                <option value="1"> موظف رقم 1 </option>
+                                <option value="2"> موظف رقم 2 </option>
+                                <option value="3"> موظف رقم 3 </option>
+                            </select>
+                        </div>
+
+                        <div class="input-box">
+                            <label for="invoice-date">التاريخ</label>
+                            <input type="date" name="invoice-date" id="invoice-date">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="total-discount">الخصم</label>
+                            <input type="number" name="total-discount" id="total-discount" min="0">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="total-invoice">الاجمالي</label>
+                            <input type="number" name="total-invoice" id="total-invoice" min="0">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="total-payed">المدفوع</label>
+                            <input type="number" name="total-payed" id="total-payed" min="0">
+                        </div>
+
+
+                        <!-- <div class="input-box">
+                            <label for="element3">الاسم</label>
+                            <input type="text" name="" id="element3">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="element4">الاسم</label>
+                            <input type="text" name="" id="element4">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="element5">الاسم</label>
+                            <input type="text" name="" id="element5">
+                        </div> -->
+
+
+
+                    </form>
+                    <button class="form-opp-btn">إضافة صنف</button>
+
+                    <div class="entries-wrapper">
+                        <div class="input-box growing">
+                            <label for="entry-title">البيان</label>
+                            <input type="number" class="entry" id="entry-title" min="0">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="entry-quantity">الكمية</label>
+                            <input type="number" class="entry" id="entry-quantity" min="0">
+                        </div>
+
+                        <div class="input-box">
+                            <label for="entry-price">السعر</label>
+                            <input type="number" class="entry" id="entry-price" min="0">
+                        </div>
+
+                        <button class="form-opp-btn">إضافة</button>
+                    </div>
+
+                    
+                    <div class="table-wrapper">
+                        <div class="table-title">الأصناف</div>
+                        <table cellspacing="0">
+                            <thead>
+                                <th>ر.م</th>
+                                <th>البيــان</th>
+                                <th>الكمية</th>
+                                <th>السعر</th>
+                                <th>الإجمالي</th>
+                                <th>تعديل</th>
+                                <th>حذف</th>
+                            </thead>
+    
+                            <tbody>
+                                <tr>
+                                    <td>1002</td>
+                                    <td>محمد أحمد علي</td>
+                                    <td>1992-04-23</td>
+                                    <td>الجفرة -ليبيا</td>
+                                    <td>10.000</td>
+                                    <td><button class="edit-row"> تعديل </button></td>
+                                    <td> <button class="delete-row"> حذف </button></td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="loader-container ">
+                    <span class="loader"></span>
+                </div>
+            </main>
+        </div>
+
+
+    </body>
+
+
+
+
+
+
+    <script src="js/all.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/modals.js"></script>
+    <!-- <script src="js/bootstrap.bundle.min.js"></script> -->
+</html>
